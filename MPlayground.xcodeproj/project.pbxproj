@@ -49,6 +49,7 @@
 		B91D3AB22A3E8F2400790A90 /* CounterAVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAVM.swift; sourceTree = "<group>"; };
 		B91D3AB62A3EA43500790A90 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		B9FCE61C2A3ED90F0027AEB9 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		B9FCE61D2A3EDD990027AEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		B91D3A862A3BDEC400790A90 /* MPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				B9FCE61D2A3EDD990027AEB9 /* Info.plist */,
 				B91D3A872A3BDEC400790A90 /* MPlaygroundApp.swift */,
 				B91D3A892A3BDEC400790A90 /* ContentView.swift */,
 				B91D3AB22A3E8F2400790A90 /* CounterAVM.swift */,
@@ -461,6 +463,7 @@
 				DEVELOPMENT_TEAM = JAPD3X329C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPlayground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +493,7 @@
 				DEVELOPMENT_TEAM = JAPD3X329C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPlayground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
