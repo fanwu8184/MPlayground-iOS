@@ -11,6 +11,6 @@ class CounterAVM: ObservableObject {
     @Published var count = 0
 
     // swiftlint
-    func add(num:Int) {
+    func add(num: Int) {
     }
 }
