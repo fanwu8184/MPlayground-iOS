@@ -48,6 +48,7 @@
 		B91D3AA42A3BDEC500790A90 /* MPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B91D3AB22A3E8F2400790A90 /* CounterAVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAVM.swift; sourceTree = "<group>"; };
 		B91D3AB62A3EA43500790A90 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B9FCE61C2A3ED90F0027AEB9 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		B91D3A7B2A3BDEC400790A90 = {
 			isa = PBXGroup;
 			children = (
+				B9FCE61B2A3ED85F0027AEB9 /* ci_scripts */,
 				B91D3AB62A3EA43500790A90 /* .swiftlint.yml */,
 				B91D3A862A3BDEC400790A90 /* MPlayground */,
 				B91D3A972A3BDEC500790A90 /* MPlaygroundTests */,
@@ -131,6 +133,14 @@
 				B91D3AA42A3BDEC500790A90 /* MPlaygroundUITestsLaunchTests.swift */,
 			);
 			path = MPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		B9FCE61B2A3ED85F0027AEB9 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				B9FCE61C2A3ED90F0027AEB9 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
