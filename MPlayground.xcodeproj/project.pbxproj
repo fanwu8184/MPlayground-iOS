@@ -14,6 +14,8 @@
 		B91D3A992A3BDEC500790A90 /* MPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3A982A3BDEC500790A90 /* MPlaygroundTests.swift */; };
 		B91D3AA32A3BDEC500790A90 /* MPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3AA22A3BDEC500790A90 /* MPlaygroundUITests.swift */; };
 		B91D3AA52A3BDEC500790A90 /* MPlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3AA42A3BDEC500790A90 /* MPlaygroundUITestsLaunchTests.swift */; };
+		B91D3AB32A3E8F2400790A90 /* CounterAVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3AB22A3E8F2400790A90 /* CounterAVM.swift */; };
+		B91D3AB72A3EA43500790A90 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B91D3AB62A3EA43500790A90 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B91D3A9E2A3BDEC500790A90 /* MPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91D3AA22A3BDEC500790A90 /* MPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPlaygroundUITests.swift; sourceTree = "<group>"; };
 		B91D3AA42A3BDEC500790A90 /* MPlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B91D3AB22A3E8F2400790A90 /* CounterAVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAVM.swift; sourceTree = "<group>"; };
+		B91D3AB62A3EA43500790A90 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		B91D3A7B2A3BDEC400790A90 = {
 			isa = PBXGroup;
 			children = (
+				B91D3AB62A3EA43500790A90 /* .swiftlint.yml */,
 				B91D3A862A3BDEC400790A90 /* MPlayground */,
 				B91D3A972A3BDEC500790A90 /* MPlaygroundTests */,
 				B91D3AA12A3BDEC500790A90 /* MPlaygroundUITests */,
@@ -96,6 +101,7 @@
 			children = (
 				B91D3A872A3BDEC400790A90 /* MPlaygroundApp.swift */,
 				B91D3A892A3BDEC400790A90 /* ContentView.swift */,
+				B91D3AB22A3E8F2400790A90 /* CounterAVM.swift */,
 				B91D3A8B2A3BDEC500790A90 /* Assets.xcassets */,
 				B91D3A8D2A3BDEC500790A90 /* Preview Content */,
 			);
@@ -137,6 +143,7 @@
 				B91D3A802A3BDEC400790A90 /* Sources */,
 				B91D3A812A3BDEC400790A90 /* Frameworks */,
 				B91D3A822A3BDEC400790A90 /* Resources */,
+				B91D3AB12A3E8EAB00790A90 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -231,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91D3AB72A3EA43500790A90 /* .swiftlint.yml in Resources */,
 				B91D3A8F2A3BDEC500790A90 /* Preview Assets.xcassets in Resources */,
 				B91D3A8C2A3BDEC500790A90 /* Assets.xcassets in Resources */,
 			);
@@ -252,12 +260,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B91D3AB12A3E8EAB00790A90 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B91D3A802A3BDEC400790A90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B91D3A8A2A3BDEC400790A90 /* ContentView.swift in Sources */,
+				B91D3AB32A3E8F2400790A90 /* CounterAVM.swift in Sources */,
 				B91D3A882A3BDEC400790A90 /* MPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

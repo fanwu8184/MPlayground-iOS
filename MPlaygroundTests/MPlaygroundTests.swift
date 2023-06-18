@@ -18,6 +18,7 @@ final class MPlaygroundTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // swiftlint:disable line_length
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -25,6 +26,7 @@ final class MPlaygroundTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
+    // swiftlint:enable line_length
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
