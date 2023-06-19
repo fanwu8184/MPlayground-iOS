@@ -5,4 +5,5 @@
 #
 #  Created by Fan Wu on 6/18/23.
 #  
-#brew install swiftlint
+brew install swiftlint
+swiftlint --strict $CI_WORKSPACE
