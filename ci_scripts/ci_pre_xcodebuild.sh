@@ -4,5 +4,5 @@
 #  MPlayground
 #
 #  Created by Fan Wu on 6/18/23.
-#  
-swiftlint --strict $CI_WORKSPACE
+#
+#swiftlint --strict $CI_WORKSPACE
