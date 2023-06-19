@@ -11,5 +11,6 @@ class CounterAVM: ObservableObject {
     @Published var count = 0
 
     func add(num: Int) {
+        count += num
     }
 }
