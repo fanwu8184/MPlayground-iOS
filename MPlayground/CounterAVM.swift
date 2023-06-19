@@ -10,6 +10,6 @@ import Foundation
 class CounterAVM: ObservableObject {
     @Published var count = 0
 
-    func add(num:Int) {
+    func add(num: Int) {
     }
 }
