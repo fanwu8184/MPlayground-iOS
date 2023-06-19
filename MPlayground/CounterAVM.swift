@@ -10,7 +10,6 @@ import Foundation
 class CounterAVM: ObservableObject {
     @Published var count = 0
 
-    // swiftlint
     func add(num: Int) {
     }
 }
