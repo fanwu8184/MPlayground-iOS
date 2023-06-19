@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var counterAVM = CounterAVM()
-    
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("\(counterAVM.count)")
-            
+
             Button("Add One") {
                 counterAVM.add(num: 1)
             }
