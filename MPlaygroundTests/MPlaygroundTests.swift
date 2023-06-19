@@ -10,6 +10,6 @@ import XCTest
 
 final class MPlaygroundTests: XCTestCase {
     func testCount() {
-        XCTAssertTrue(1 * 2 == 4)
+        XCTAssertTrue(3 * 2 == 4)
     }
 }
